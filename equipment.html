@@ -1,0 +1,665 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Aviron - Staff's Portal</title>
+		<!-- META SECTION -->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<!-- END META SECTION -->
+		<!-- CSS INCLUDE -->
+		<link rel="stylesheet" href="css\styles.css">
+		<!-- EOF CSS INCLUDE -->
+	</head>
+	<body>
+		<!-- APP WRAPPER -->
+		<div class="app">
+			<!-- START APP CONTAINER -->
+			<div class="app-container">
+				<!-- START SIDEBAR -->
+				<div class="app-sidebar app-navigation app-navigation-fixed scroll app-navigation-style-default app-navigation-open-hover dir-left" data-type="close-other">
+					<a href="index.html" class="app-navigation-logo">Aviron - Staff's Portal
+
+					</a>
+					<nav>
+						<ul>
+							<li class="title">MAIN</li>
+							<li>
+								<a href="coupon-manager.html"  >
+									<span class="nav-icon-hexa">Cm</span> Coupon Manager
+								</a>
+							</li>
+							<li>
+								<a href="key-manager.html">
+									<span class="nav-icon-hexa">Km</span> Key Manager
+								</a>
+							</li>
+							<li>
+								<a href="account-manager.html">
+									<span class="nav-icon-hexa">Am</span> Account Manager
+								</a>
+							</li>
+							<li>
+								<a href="machine-manager.html">
+									<span class="nav-icon-hexa">Mm</span> Machine Manager
+								</a>
+							</li>
+							<li>
+								<a href="equipment.html" class="active">
+									<span class="nav-icon-hexa">Eq</span> Equipment
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="nav-icon-hexa">Ad</span> Administrator
+								</a>
+								<ul>
+								<li>
+									<a href="administrator-user.html">
+										<span class="nav-icon-hexa">Us</span> User
+									</a>
+								</li>
+								<li>
+									<a href="administrator-group.html">
+										<span class="nav-icon-hexa">Gr</span> Group
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						</ul>
+					</nav>
+				</div>
+				<!-- END SIDEBAR -->
+				<!-- START APP CONTENT -->
+				<div class="app-content app-sidebar-left">
+					<!-- START APP HEADER -->
+					<div class="app-header app-header-design-default">
+						<ul class="app-header-buttons">
+							<li class="visible-mobile">
+								<a href="#" class="btn btn-link btn-icon" data-sidebar-toggle=".app-sidebar.dir-left">
+									<span class="icon-menu"></span>
+								</a>
+							</li>
+							<li class="hidden-mobile">
+								<a href="#" class="btn btn-link btn-icon" data-sidebar-minimize=".app-sidebar.dir-left">
+									<span class="icon-menu"></span>
+								</a>
+							</li>
+						</ul>
+						<form class="app-header-search" action="" method="post">
+							<input type="text" name="keyword" placeholder="Search">
+						</form>
+						<ul class="app-header-buttons pull-right">
+							<li>
+								<div class="contact contact-rounded contact-bordered contact-lg contact-ps-controls">
+									<img src="assets\images\users\user_1.jpg" alt="John Doe">
+									<div class="contact-container">
+										<a href="#">Sunny Vo</a>
+										<span>Administrator</span>
+									</div>
+									<div class="contact-controls">
+										<div class="dropdown">
+											<button type="button" class="btn btn-default btn-icon" data-toggle="dropdown">
+											<span class="icon-cog"></span>
+											</button>
+											<ul class="dropdown-menu dropdown-left">
+												<li>
+													<a href="#">
+														<span class="icon-cog"></span> Settings
+													</a>
+												</li>
+												<li class="divider"></li>
+												<li>
+													<a href="login.html">
+														<span class="icon-exit"></span> Log Out
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<!-- END APP HEADER  -->
+					<!-- START PAGE HEADING -->
+					<div class="app-heading app-heading-bordered app-heading-page">
+						<div class="title">
+							<h1>Equipment Manager</h1>
+							<p>The coupon manager allows the administrator to view all coupons, view coupon details, create new coupons, and delete them. </p>
+						</div>
+					</div>
+					<div class="app-heading-container app-heading-bordered bottom">
+						<ul class="breadcrumb">
+							<li>
+								<a href="#">Aviron staff portal</a>
+							</li>
+							<li>
+								<a href="#">Components</a>
+							</li>
+							<li class="active">Equipment Manager</li>
+						</ul>
+					</div>
+					<!-- END PAGE HEADING -->
+					<!-- START PAGE CONTAINER -->
+					<div class="container">
+						<div class="block block-condensed">
+							<!-- START HEADING -->
+							<div class="app-heading app-heading-small">
+								<div class="title">
+									<h5 class="inline">
+                    Subscriptions
+                  </h5>
+								</div>
+								<div class="heading-elements">
+
+
+									<div class="btn-group">
+										<button class="btn btn-primary btn-icon-fixed dropdown-toggle" data-toggle="dropdown">
+										    <span class="fa fa-bars"></span> Export Data
+										</button>
+										<ul class="dropdown-menu dropdown-left">
+											<li>
+												<a href="#" onclick="$('#sortable-data').tableExport({type:'json',escape:'false'})">
+													<img src="img\icons\json.png" width="24"> JSON
+												</a>
+											</li>
+											<li>
+												<a href="#" onclick="$('#sortable-data').tableExport({type:'json',escape:'false',ignoreColumn:'[2,3]'})">
+													<img src="img\icons\json.png" width="24"> JSON (ignoreColumn)
+												</a>
+											</li>
+											<li>
+												<a href="#" onclick="$('#sortable-data').tableExport({type:'json',escape:'true'})">
+													<img src="img\icons\json.png" width="24"> JSON (with Escape)
+												</a>
+											</li>
+											<li class="divider"></li>
+											<li>
+												<a href="#" onclick="$('#sortable-data').tableExport({type:'xml',escape:'false'})">
+													<img src="img\icons\xml.png" width="24"> XML
+												</a>
+											</li>
+											<li>
+												<a href="#" onclick="$('#sortable-data').tableExport({type:'sql'})">
+													<img src="img\icons\sql.png" width="24"> SQL
+												</a>
+											</li>
+											<li class="divider"></li>
+											<li>
+												<a href="#" onclick="$('#sortable-data').tableExport({type:'csv',escape:'false'})">
+													<img src="img\icons\csv.png" width="24"> CSV
+												</a>
+											</li>
+											<li>
+												<a href="#" onclick="$('#sortable-data').tableExport({type:'txt',escape:'false'})">
+													<img src="img\icons\txt.png" width="24"> TXT
+												</a>
+											</li>
+											<li class="divider"></li>
+											<li>
+												<a href="#" onclick="$('#sortable-data').tableExport({type:'excel',escape:'false'})">
+													<img src="img\icons\xls.png" width="24"> XLS
+												</a>
+											</li>
+											<li>
+												<a href="#" onclick="$('#sortable-data').tableExport({type:'doc',escape:'false'})">
+													<img src="img\icons\word.png" width="24"> Word
+												</a>
+											</li>
+											<li>
+												<a href="#" onclick="$('#sortable-data').tableExport({type:'powerpoint',escape:'false'})">
+													<img src="img\icons\ppt.png" width="24"> PowerPoint
+												</a>
+											</li>
+											<li class="divider"></li>
+											<li>
+												<a href="#" onclick="$('#sortable-data').tableExport({type:'png',escape:'false'})">
+													<img src="img\icons\png.png" width="24"> PNG
+												</a>
+											</li>
+											<li>
+												<a href="#" onclick="$('#sortable-data').tableExport({type:'pdf',escape:'false'})">
+													<img src="img\icons\pdf.png" width="24"> PDF
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!-- END HEADING -->
+
+							<div class="block-content">
+
+								<!-- START  :: equipment-dashboard -->
+						      <section class="equipment-dashboard">
+						         <div class="container">
+
+						               <!-- START :: column left -->
+						               <div class="col-md-4">
+
+						                  <div class="form-group box-select">
+						                     <label>Equipment</label>
+						                     <select  class="form-control niceselect light right"  name="">
+						                        <option value="">Rowing machine</option>
+						                        <option value="">Rowing machine</option>
+						                        <option value="">Rowing machine</option>
+						                        <option value="">Rowing machine</option>
+						                     </select>
+						                   </div>
+						                   <!-- END :: form-group  box-select -->
+
+						                  <div class="machine-list">
+
+						                     <div class="form-inline">
+						                          <button type="button" class="btn btn-primary">
+						                             <i class="icon-folder-open"></i> New group
+						                          </button>
+						                          <div class="form-group">
+						                            <input type="text" class="form-control light border" placeholder="Search">
+						                          </div>
+						                     </div>
+						                     <!-- END :: form inline -->
+
+						                     <!-- START Collapse -->
+						                     <div class="panel-group light margin-top-30" id="machine" role="tablist" aria-multiselectable="true">
+						                       <div class="panel panel-default">
+
+						                         <div class="panel-heading" role="tab" id="headingOne">
+						                           <h4 class="panel-title">
+						                             <a >
+						                             <div class="checkbox checkbox-primary">
+						                                   <input id="checkbox1" type="checkbox" checked>
+						                                   <label for="checkbox1">
+						                                      <i class="icon-folder-open"></i>
+						                                       <span role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"  class="text-13 text-bold">Kenedy Gym</span>
+						                                   </label>
+						                              </div>
+						                              <div class="right-item">
+						                                 <button class="btn btn-lg btn-flat btn-primary">
+						                                    <i class=" icon-trash"></i>
+						                                 </button>
+						                                  <button class="btn btn-lg btn-flat btn-primary">
+						                                     <i class="icon-pencil-1"></i>
+						                                  </button>
+						                                  <button class="btn btn-dark btn-sm">01</button>
+						                              </div>
+						                             </a>
+
+						                           </h4>
+						                         </div>
+						                         <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+						                           <div class="panel-body">
+						                              <ul class="euipment-ul">
+						                                 <li>
+						                                    <div class="checkbox checkbox-primary">
+						                                          <input id="checkbox1-1" type="checkbox">
+						                                          <label for="checkbox1-1">
+						                                             <div class="machine-name">
+						                                                <strong>Bao aviron</strong>
+						                                                <p>Machine ID : ABC123456ABC</p>
+						                                             </div>
+						                                          </label>
+						                                     </div>
+						                                 </li>
+						                                 <li>
+						                                    <div class="checkbox checkbox-primary">
+						                                          <input id="checkbox1-2" type="checkbox">
+						                                          <label for="checkbox1-2">
+						                                             <div class="machine-name">
+						                                                <strong>Bao aviron</strong>
+						                                                <p>Machine ID : ABC123456ABC</p>
+						                                             </div>
+						                                          </label>
+						                                     </div>
+						                                 </li>
+
+						                                 <li>
+						                                    <div class="checkbox checkbox-primary">
+						                                          <input id="checkbox1-3" type="checkbox">
+						                                          <label for="checkbox1-3">
+						                                             <div class="machine-name">
+						                                                <strong>Bao aviron</strong>
+						                                                <p>Machine ID : ABC123456ABC</p>
+						                                             </div>
+						                                          </label>
+						                                     </div>
+						                                 </li>
+
+						                                 <li>
+						                                    <div class="checkbox checkbox-primary">
+						                                          <input id="checkbox1-4" type="checkbox">
+						                                          <label for="checkbox1-4">
+						                                             <div class="machine-name">
+						                                                <strong>Bao aviron</strong>
+						                                                <p>Machine ID : ABC123456ABC</p>
+						                                             </div>
+						                                          </label>
+						                                     </div>
+						                                 </li>
+
+						                              </ul>
+						                           </div>
+						                         </div>
+						                       </div>
+						                       <!-- END :: a  panel -->
+
+
+						                       <div class="panel panel-default">
+						                         <div class="panel-heading" role="tab" id="headingTwo">
+						                           <h4 class="panel-title">
+						                              <a >
+						                            <div class="checkbox checkbox-primary">
+						                                   <input id="checkbox2" type="checkbox" checked>
+						                                   <label for="checkbox2">
+						                                      <i class="icon-folder-open"></i>
+						                                       <span role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo"  class="text-13 text-bold">Obama Gym</span>
+						                                   </label>
+						                              </div>
+
+						                              <div class="right-item">
+						                                 <button class="btn btn-lg btn-flat btn-primary">
+						                                    <i class=" icon-trash"></i>
+						                                 </button>
+						                                  <button class="btn btn-lg btn-flat btn-primary">
+						                                     <i class="icon-pencil-1"></i>
+						                                  </button>
+						                                  <button class="btn btn-dark btn-sm">01</button>
+						                              </div>
+						                            </a>
+						                           </h4>
+						                         </div>
+						                         <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+						                           <div class="panel-body">
+						                              <ul  class="euipment-ul">
+						                                 <li>
+						                                    <div class="checkbox checkbox-primary">
+						                                          <input id="checkbox1-1" type="checkbox">
+						                                          <label for="checkbox1-1">
+						                                             <div class="machine-name">
+						                                                <strong>Bao aviron</strong>
+						                                                <p>Machine ID : ABC123456ABC</p>
+						                                             </div>
+						                                          </label>
+						                                     </div>
+						                                 </li>
+						                                 <li>
+						                                    <div class="checkbox checkbox-primary">
+						                                          <input id="checkbox1-2" type="checkbox">
+						                                          <label for="checkbox1-2">
+						                                             <div class="machine-name">
+						                                                <strong>Bao aviron</strong>
+						                                                <p>Machine ID : ABC123456ABC</p>
+						                                             </div>
+						                                          </label>
+						                                     </div>
+						                                 </li>
+
+						                                 <li>
+						                                    <div class="checkbox checkbox-primary">
+						                                          <input id="checkbox1-3" type="checkbox">
+						                                          <label for="checkbox1-3">
+						                                             <div class="machine-name">
+						                                                <strong>Bao aviron</strong>
+						                                                <p>Machine ID : ABC123456ABC</p>
+						                                             </div>
+						                                          </label>
+						                                     </div>
+						                                 </li>
+
+						                                 <li>
+						                                    <div class="checkbox checkbox-primary">
+						                                          <input id="checkbox1-4" type="checkbox">
+						                                          <label for="checkbox1-4">
+						                                             <div class="machine-name">
+						                                                <strong>Bao aviron</strong>
+						                                                <p>Machine ID : ABC123456ABC</p>
+						                                             </div>
+						                                          </label>
+						                                     </div>
+						                                 </li>
+
+						                              </ul>
+						                           </div>
+						                         </div>
+						                       </div>
+
+						                        <!-- END :: a  panel -->
+
+						                       <div class="panel panel-default">
+						                         <div class="panel-heading" role="tab" id="headingThree">
+						                           <h4 class="panel-title">
+						                              <a >
+						                              <div class="checkbox checkbox-primary">
+						                                    <input id="checkbox3" type="checkbox">
+						                                    <label for="checkbox3">
+						                                       <i class="icon-folder-open"></i>
+						                                        <span role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree"  class="text-13 text-bold">Sunny Gym</span>
+						                                    </label>
+						                               </div>
+						                               <div class="right-item">
+						                                  <button class="btn btn-lg btn-flat btn-primary">
+						                                     <i class=" icon-trash"></i>
+						                                  </button>
+						                                   <button class="btn btn-lg btn-flat btn-primary">
+						                                      <i class="icon-pencil-1"></i>
+						                                   </button>
+						                                   <button class="btn btn-dark btn-sm">01</button>
+						                               </div>
+						                              </a>
+						                           </h4>
+						                         </div>
+						                         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+						                           <div class="panel-body">
+						                              <ul class="euipment-ul">
+						                                 <li>
+						                                    <div class="checkbox checkbox-primary">
+						                                          <input id="checkbox1-1" type="checkbox">
+						                                          <label for="checkbox1-1">
+						                                             <div class="machine-name">
+						                                                <strong>Bao aviron</strong>
+						                                                <p>Machine ID : ABC123456ABC</p>
+						                                             </div>
+						                                          </label>
+						                                     </div>
+						                                 </li>
+						                                 <li>
+						                                    <div class="checkbox checkbox-primary">
+						                                          <input id="checkbox1-2" type="checkbox">
+						                                          <label for="checkbox1-2">
+						                                             <div class="machine-name">
+						                                                <strong>Bao aviron</strong>
+						                                                <p>Machine ID : ABC123456ABC</p>
+						                                             </div>
+						                                          </label>
+						                                     </div>
+						                                 </li>
+
+						                                 <li>
+						                                    <div class="checkbox checkbox-primary">
+						                                          <input id="checkbox1-3" type="checkbox">
+						                                          <label for="checkbox1-3">
+						                                             <div class="machine-name">
+						                                                <strong>Bao aviron</strong>
+						                                                <p>Machine ID : ABC123456ABC</p>
+						                                             </div>
+						                                          </label>
+						                                     </div>
+						                                 </li>
+
+						                                 <li>
+						                                    <div class="checkbox checkbox-primary">
+						                                          <input id="checkbox1-4" type="checkbox">
+						                                          <label for="checkbox1-4">
+						                                             <div class="machine-name">
+						                                                <strong>Bao aviron</strong>
+						                                                <p>Machine ID : ABC123456ABC</p>
+						                                             </div>
+						                                          </label>
+						                                     </div>
+						                                 </li>
+
+						                              </ul>
+						                           </div>
+						                         </div>
+						                       </div>
+						                        <!-- END :: a  panel -->
+
+						                     </div>
+						                     <!-- END :: Collapse -->
+
+						                  </div>
+
+						               </div>
+						               <!-- END :: column left -->
+
+						               <div class="col-md-8">
+
+						                  <div class="date-range form-inline">
+
+						                     <div class="form-group">
+						                      <label for="" class="control-label">
+						                        Date range
+						                     </label>
+						                     </div>
+
+						                     <div class="form-group">
+						                       <div class="form-control-wrapper has-date">
+						                          <input type="text"  class="form-control floating-label date  input-md" placeholder="From date">
+						                       </div>
+						                     </div>
+
+						                     <div class="form-group center">
+						                        <label for="" class="control-label">
+						                          -
+						                       </label>
+						                    </div>
+
+						                     <div class="form-group">
+						                        <div class="form-control-wrapper has-date">
+						            					<input type="text"  class="form-control floating-label date  input-md" placeholder="To date">
+						            				</div>
+						                     </div>
+
+						                     <div class="form-group">
+						                        <button class="btn btn-primary btn-square"> <i class=" icon-search"></i> </button>
+						                     </div>
+
+						                     <!-- END :: a form-group -->
+						                  </div>
+						                  <!-- END :: Date range -->
+
+						                  <div class="data-metric">
+						                     <div class="row">
+						                        <div class="col-md-4">
+						                           <h5>Challenger</h5>
+						                           <h1>30</h1>
+						                        </div>
+						                        <div class="col-md-4">
+						                           <h5>Output ( KJ)</h5>
+						                           <h1>37</h1>
+						                        </div>
+						                        <div class="col-md-4">
+						                           <h5>Calories</h5>
+						                           <h1>1500</h1>
+						                        </div>
+						                     </div>
+						                     <div class="row">
+						                        <div class="col-md-4">
+						                           <h5>Time (Hour::min)</h5>
+						                           <h1>0000:00</h1>
+						                        </div>
+						                        <div class="col-md-4">
+						                           <h5>Meters</h5>
+						                           <h1>1523</h1>
+						                        </div>
+						                        <div class="col-md-4">
+						                           <h5>Stroke</h5>
+						                           <h1>98</h1>
+						                        </div>
+						                     </div>
+						                  </div>
+						                  <!-- END :: data-metric -->
+
+
+						                  <div class="data-filter  margin-top-10">
+						                     <div class="row">
+						                        <div class="col-md-2 form-group">
+						                           <select  class="form-control niceselect light"  name="">
+						                              <option value="1" >Hourly</option>
+						                              <option value="1" >Daily</option>
+						                              <option value="2" selected>Weekly</option>
+						                           </select>
+						                        </div>
+						                        <div class="col-md-10 text-right">
+						                           <ul>
+						                              <li>Challenges</li>
+						                              <li>Time</li>
+						                              <li>Output</li>
+						                              <li>Meters</li>
+						                              <li class="active">Calories</li>
+						                              <li>Stokes</li>
+						                           </ul>
+						                        </div>
+						                     </div>
+						                  </div>
+						                  <!-- END :: data-filter -->
+
+						                  <div class="the-graph">
+						                      <div id="chart_div" class="chart"></div>
+						                  </div>
+						                  <!-- END :: the-graph -->
+
+						               </div>
+						               <!-- END :: column Right -->
+
+						         </div>
+						      </section>
+						      <!-- END  :: equipment-dashboard -->
+
+							</div>
+							<!-- END block content -->
+
+						</div>
+					</div>
+					<!-- END PAGE CONTAINER -->
+				</div>
+				<!-- END APP CONTENT -->
+			</div>
+			<!-- END APP CONTAINER -->
+
+			<!-- APP OVERLAY -->
+			<div class="app-overlay"></div>
+			<!-- END APP OVERLAY -->
+		</div>
+		<!-- END APP WRAPPER -->
+		<!--
+		<div class="modal fade" id="modal-thanks" tabindex="-1" role="dialog"><div class="modal-dialog modal-sm" role="document"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="icon-cross"></span></button><div class="modal-content"><div class="modal-body"><p class="text-center margin-bottom-20"><img src="assets/images/smile.png" alt="Thank you" style="width: 100px;"></p><h3 id="modal-thanks-heading" class="text-uppercase text-bold text-lg heading-line-below heading-line-below-short text-center"></h3><p class="text-muted text-center margin-bottom-10">Thank you so much for likes</p><p class="text-muted text-center">We will do our best to make<br> Boooya template perfect</p><p class="text-center"><button class="btn btn-success btn-clean" data-dismiss="modal">Continue</button></p></div></div></div></div>-->
+		<!-- IMPORTANT SCRIPTS -->
+		<script type="text/javascript" src="js\vendor\jquery\jquery.min.js"></script>
+		<script type="text/javascript" src="js\vendor\jquery\jquery-migrate.min.js"></script>
+		<script type="text/javascript" src="js\vendor\jquery\jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js\vendor\bootstrap\bootstrap.min.js"></script>
+		<script type="text/javascript" src="js\vendor\moment\moment.min.js"></script>
+		<script type="text/javascript" src="js\vendor\customscrollbar\jquery.mCustomScrollbar.min.js"></script>
+		<!-- END IMPORTANT SCRIPTS -->
+		<!-- THIS PAGE SCRIPTS -->
+		<script type="text/javascript" src="js\vendor\datatables\jquery.dataTables.min.js"></script>
+		<script type="text/javascript" src="js\vendor\datatables\dataTables.bootstrap.min.js"></script>
+		<script type="text/javascript" src="js\vendor\tableexport\tableExport.js"></script>
+		<script type="text/javascript" src="js\vendor\tableexport\jquery.base64.js"></script>
+		<script type="text/javascript" src="js\vendor\tableexport\html2canvas.js"></script>
+		<script type="text/javascript" src="js\vendor\tableexport\jspdf\libs\sprintf.js"></script>
+		<script type="text/javascript" src="js\vendor\tableexport\jspdf\jspdf.js"></script>
+		<script type="text/javascript" src="js\vendor\tableexport\jspdf\libs\base64.js"></script>
+		<script type="text/javascript" src="js\vendor\bootstrap-select\bootstrap-select.js"></script>
+		<!-- END THIS PAGE SCRIPTS -->
+		<!-- APP SCRIPTS -->
+		<script type="text/javascript" src="js\app.js"></script>
+		<script type="text/javascript" src="js\app_plugins.js"></script>
+		<!-- END APP SCRIPTS -->
+	</body>
+</html>
