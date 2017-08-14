@@ -142,9 +142,12 @@
                   padding: 30px 15px;
                   .form-group {
                      margin-bottom: 0px;
+                     width: auto;
                   }
                   .text-right {
+                    width: auto;
                      ul {
+                       width: auto;
                         padding-left: 0px;
                         margin-bottom: 0px;
                         li {
@@ -153,6 +156,8 @@
                            text-transform: uppercase;
                            padding: 5px 15px;
                            .transition-all(0.3s);
+                           cursor: pointer;
+                           width: auto;
                            &.active {
                               color: @red-1;
                               border: 1px solid @red-1;
@@ -180,4 +185,34 @@
    }
 }
 // END  :: equipment-dashboard
+// ------------------------------------------
+
+
+
+// ------------------------------------------
+// START :: data-metric
+.data-metric {
+   .row {
+      div {
+         text-align: center;
+         padding: 35px 0px;
+         h5 {
+            line-height: 0;
+            text-transform: uppercase;
+         }
+         h1 {
+            line-height: 20px;
+            font-weight: 300;
+            color: @red-1;
+         }
+         &:not(:last-child) {
+            border-right:  1px solid #eee;
+         }
+      }
+      &:first-child {
+         border-bottom: 1px solid #eee;
+      }
+   }
+}
+// END :: data-metric
 // ------------------------------------------
