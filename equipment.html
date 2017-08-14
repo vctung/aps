@@ -244,13 +244,25 @@
 						               <div class="col-md-4">
 
 						                  <div class="form-group box-select">
-						                     <label>Equipment</label>
-						                     <select  class="form-control niceselect light right"  name="">
+						                     <!-- <label>Equipment</label> -->
+						                     <!-- <select  class="form-control niceselect light right"  name="">
 						                        <option value="">Rowing machine</option>
 						                        <option value="">Rowing machine</option>
 						                        <option value="">Rowing machine</option>
 						                        <option value="">Rowing machine</option>
-						                     </select>
+						                     </select> -->
+																 <div class="form-inline">
+																	 <div class="form-group">
+																		 <label>Equipment</label>
+																			<select class="bs-select">
+																				<option>Rowing machine
+																				<option>Rowing machine
+																				<option>Rowing machine
+																				<option>Rowing machine
+																			</select>
+																	 </div>
+																 </div>
+
 						                   </div>
 						                   <!-- END :: form-group  box-select -->
 
@@ -271,15 +283,22 @@
 						                       <div class="panel panel-default">
 
 						                         <div class="panel-heading" role="tab" id="headingOne">
-						                           <h4 class="panel-title">
+						                           <h4 class="panel-title" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
 						                             <a >
+																					 <div class="app-checkbox" >
+																						<label  for="checkbox1">
+																							<input id="checkbox1" type="checkbox" name="app-checkbox-1" value="0">
+																							 <b   class="text-13 text-bold">Kenedy Gym</b>
+																							</label>
+																						</div>
+<!--
 						                             <div class="checkbox checkbox-primary">
 						                                   <input id="checkbox1" type="checkbox" checked>
 						                                   <label for="checkbox1">
 						                                      <i class="icon-folder-open"></i>
 						                                       <span role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"  class="text-13 text-bold">Kenedy Gym</span>
 						                                   </label>
-						                              </div>
+						                              </div> -->
 						                              <div class="right-item">
 						                                 <button class="btn btn-lg btn-flat btn-primary">
 						                                    <i class=" icon-trash"></i>
@@ -522,34 +541,27 @@
 
 						                  <div class="date-range form-inline">
 
-						                     <div class="form-group">
-						                      <label for="" class="control-label">
-						                        Date range
-						                     </label>
-						                     </div>
+																<div class="form-group">
 
-						                     <div class="form-group">
-						                       <div class="form-control-wrapper has-date">
-						                          <input type="text"  class="form-control floating-label date  input-md" placeholder="From date">
-						                       </div>
-						                     </div>
+																	<div class="row">
+																		<label>Date range</label>
 
-						                     <div class="form-group center">
-						                        <label for="" class="control-label">
-						                          -
-						                       </label>
-						                    </div>
+																		<div>
+																			<div class="input-group">
+																				<div class="input-group-addon">
+																					<span class="fa fa-calendar"></span>
+																				</div>
+																				<input type="text" class="form-control daterange" value="09/01/2016 - 09/20/2016">
+																				</div>
+																			</div>
 
-						                     <div class="form-group">
-						                        <div class="form-control-wrapper has-date">
-						            					<input type="text"  class="form-control floating-label date  input-md" placeholder="To date">
-						            				</div>
-						                     </div>
+																			<button type="button" class="btn btn-primary">
+																				Refresh
+																			</button>
+																		</div>
+																		<!-- END :: row -->
 
-						                     <div class="form-group">
-						                        <button class="btn btn-primary btn-square"> <i class=" icon-search"></i> </button>
-						                     </div>
-
+																		</div>
 						                     <!-- END :: a form-group -->
 						                  </div>
 						                  <!-- END :: Date range -->
@@ -590,7 +602,7 @@
 						                  <div class="data-filter  margin-top-10">
 						                     <div class="row">
 						                        <div class="col-md-2 form-group">
-						                           <select  class="form-control niceselect light"  name="">
+						                           <select  class="form-control bs-select"  name="">
 						                              <option value="1" >Hourly</option>
 						                              <option value="1" >Daily</option>
 						                              <option value="2" selected>Weekly</option>
@@ -658,6 +670,8 @@
 		<script type="text/javascript" src="js\vendor\tableexport\jspdf\jspdf.js"></script>
 		<script type="text/javascript" src="js\vendor\tableexport\jspdf\libs\base64.js"></script>
 		<script type="text/javascript" src="js\vendor\bootstrap-select\bootstrap-select.js"></script>
+		<script type="text/javascript" src="js\vendor\bootstrap-datetimepicker\bootstrap-datetimepicker.js"></script>
+	  <script type="text/javascript" src="js\vendor\bootstrap-daterange\daterangepicker.js"></script>
 		<!-- END THIS PAGE SCRIPTS -->
 		<!-- APP SCRIPTS -->
 		<script type="text/javascript" src="js\app.js"></script>
