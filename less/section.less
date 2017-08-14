@@ -68,14 +68,24 @@
                                     }
                                  }
                               }
+                              .app-checkbox {
+                                & > label {
+                                  display: block;
+                                }
+                                & > b {
+                                  margin-left: 30px;
+                                }
+                              }
                            }
                            .right-item {
                               position: absolute;
                               top: 0;
                               right: 0px;
                               button {
-                                 margin-top: -3px;
+                                 margin-top: 0px;
                                  padding: 5px;
+                                 width: 40px;
+                                 height: 40px;
                                  &.btn-lg {
                                     display: none;
                                  }
@@ -90,7 +100,7 @@
                            background: #dddddd;
                            h4 {
                               .right-item {
-                                 margin-top: -2px;
+                                 margin-top: -3px;
                                  button {
                                     &.btn-lg {
                                        display: inline-block;
@@ -133,6 +143,17 @@
                                     height: 60px;
                            		}
 
+                              }
+                              &.equipment-ul {
+                                li {
+                                  .app-checkbox {
+                                    margin: -10px 0 0 0;
+                                    .machine-name {
+                                        margin-left: 35px;
+                                        margin-top: -8px;
+                                    }
+                                  }
+                                }
                               }
                            }
                         }
