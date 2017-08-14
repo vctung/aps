@@ -1,0 +1,250 @@
+.app-checkbox.in-table-cell label {
+  padding-left: 0;
+}
+.app-checkbox.in-table-cell label input {
+  position: static;
+}
+.app-checkbox.in-table-cell label span {
+  top: 3px;
+}
+.btn.btn-flat {
+  background: none;
+  border: none;
+}
+.btn.btn-flat:focus,
+.btn.btn-flat:active,
+.btn.btn-flat:hover {
+  background: none !important;
+  box-shadow: none;
+}
+.btn.btn-flat.btn-primary {
+  color: #ce0832;
+}
+.equipment-dashboard {
+  margin-bottom: 40px;
+  background: red;
+}
+.equipment-dashboard .container {
+  border: 1px solid #eee;
+  padding: 0;
+  background: #f9f9f9;
+}
+.equipment-dashboard .container > div:first-child {
+  padding: 0;
+}
+.equipment-dashboard .container > div:first-child > .box-select {
+  padding: 20px 20px;
+  background: #eeeeee;
+}
+.equipment-dashboard .container > div:first-child > .box-select label {
+  display: inline-block;
+  line-height: 30px;
+}
+.equipment-dashboard .container > div:first-child > .box-select .niceselect {
+  display: inline-block;
+  width: auto;
+  min-width: 230px;
+}
+.equipment-dashboard .container > div:first-child > .box-select .form-inline .form-group .bs-select {
+  width: 75%;
+  display: inline-block;
+  float: right;
+}
+.equipment-dashboard .container > div:first-child .machine-list {
+  padding: 20px 20px;
+}
+.equipment-dashboard .container > div:first-child .machine-list .form-inline {
+  text-align: center;
+}
+.equipment-dashboard .container > div:first-child .machine-list .form-inline .form-group {
+  width: 60%;
+}
+.equipment-dashboard .container > div:first-child .machine-list .form-inline .form-group input {
+  width: 100%;
+}
+.equipment-dashboard .container > div:first-child .machine-list .panel-group .panel .panel-heading {
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  background: #fff;
+}
+.equipment-dashboard .container > div:first-child .machine-list .panel-group .panel .panel-heading h4 {
+  position: relative;
+  width: 100%;
+}
+.equipment-dashboard .container > div:first-child .machine-list .panel-group .panel .panel-heading h4 a .checkbox {
+  margin: 0;
+}
+.equipment-dashboard .container > div:first-child .machine-list .panel-group .panel .panel-heading h4 a .checkbox label {
+  vertical-align: middle;
+}
+.equipment-dashboard .container > div:first-child .machine-list .panel-group .panel .panel-heading h4 a .checkbox label::after {
+  top: 2px;
+}
+.equipment-dashboard .container > div:first-child .machine-list .panel-group .panel .panel-heading h4 a .checkbox label::before {
+  margin-top: 1px;
+}
+.equipment-dashboard .container > div:first-child .machine-list .panel-group .panel .panel-heading h4 a .app-checkbox > label {
+  display: block;
+}
+.equipment-dashboard .container > div:first-child .machine-list .panel-group .panel .panel-heading h4 a .app-checkbox > b {
+  margin-left: 30px;
+}
+.equipment-dashboard .container > div:first-child .machine-list .panel-group .panel .panel-heading h4 .right-item {
+  position: absolute;
+  top: -3px;
+  right: 0px;
+}
+.equipment-dashboard .container > div:first-child .machine-list .panel-group .panel .panel-heading h4 .right-item button {
+  margin-top: 0px;
+  padding: 5px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+}
+.equipment-dashboard .container > div:first-child .machine-list .panel-group .panel .panel-heading h4 .right-item button.btn-lg {
+  display: none;
+}
+.equipment-dashboard .container > div:first-child .machine-list .panel-group .panel .panel-heading h4 .right-item button.btn-dark {
+  background: #666666;
+  color: #fff;
+}
+.equipment-dashboard .container > div:first-child .machine-list .panel-group .panel .panel-heading h4 .right-item button:last-child {
+  margin-top: 3px;
+}
+.equipment-dashboard .container > div:first-child .machine-list .panel-group .panel .panel-heading:hover {
+  background: #dddddd;
+}
+.equipment-dashboard .container > div:first-child .machine-list .panel-group .panel .panel-heading:hover h4 .right-item button.btn-lg {
+  display: inline-block;
+}
+.equipment-dashboard .container > div:first-child .machine-list .panel-group .panel .panel-collapse .panel-body {
+  padding: 0;
+}
+.equipment-dashboard .container > div:first-child .machine-list .panel-group .panel .panel-collapse .panel-body ul {
+  padding-left: 0px;
+  margin-bottom: 0px;
+  min-height: 100px;
+}
+.equipment-dashboard .container > div:first-child .machine-list .panel-group .panel .panel-collapse .panel-body ul li {
+  padding: 5px 15px;
+  list-style: none;
+  border-bottom: 1px solid #f2f2f2;
+}
+.equipment-dashboard .container > div:first-child .machine-list .panel-group .panel .panel-collapse .panel-body ul li .checkbox {
+  margin: 10px 0 6px 0;
+}
+.equipment-dashboard .container > div:first-child .machine-list .panel-group .panel .panel-collapse .panel-body ul li .checkbox label .machine-name {
+  margin: -4px 0px 0px 0px;
+  padding: 0px 0px 0px 25px;
+}
+.equipment-dashboard .container > div:first-child .machine-list .panel-group .panel .panel-collapse .panel-body ul li .checkbox label .machine-name p {
+  margin: 0;
+}
+.equipment-dashboard .container > div:first-child .machine-list .panel-group .panel .panel-collapse .panel-body ul li.sortable-placeholder {
+  border: 1px dashed #ddd;
+  background: none;
+  height: 60px;
+}
+.equipment-dashboard .container > div:first-child .machine-list .panel-group .panel .panel-collapse .panel-body ul.equipment-ul li .app-checkbox {
+  margin: -10px 0 0 0;
+}
+.equipment-dashboard .container > div:first-child .machine-list .panel-group .panel .panel-collapse .panel-body ul.equipment-ul li .app-checkbox .machine-name {
+  margin-left: 35px;
+  margin-top: -8px;
+}
+.equipment-dashboard .container > div:last-child {
+  background: #fff;
+  color: #666;
+}
+.equipment-dashboard .container > div:last-child .date-range .form-group {
+  border-bottom: 1px solid #eee;
+  padding: 10px 0px;
+  margin-bottom: 10px;
+}
+.equipment-dashboard .container > div:last-child .date-range .form-group .row > div {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 20px;
+}
+.equipment-dashboard .container > div:last-child .date-range .form-group .row > label {
+  margin-left: 20px;
+}
+.equipment-dashboard .container > div:last-child .data-filter .row {
+  background: #f2f2f2;
+  padding: 30px 15px;
+}
+.equipment-dashboard .container > div:last-child .data-filter .row .form-group {
+  margin-bottom: 0px;
+  width: auto;
+}
+.equipment-dashboard .container > div:last-child .data-filter .row .text-right {
+  width: auto;
+}
+.equipment-dashboard .container > div:last-child .data-filter .row .text-right ul {
+  width: auto;
+  padding-left: 0px;
+  margin-bottom: 0px;
+}
+.equipment-dashboard .container > div:last-child .data-filter .row .text-right ul li {
+  display: inline-block;
+  list-style: none;
+  text-transform: uppercase;
+  padding: 5px 15px;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  width: auto;
+}
+.equipment-dashboard .container > div:last-child .data-filter .row .text-right ul li.active {
+  color: #ce0832;
+  border: 1px solid #ce0832;
+  border-radius: 50px;
+}
+.equipment-dashboard .container > div:last-child .data-filter .row .text-right ul li:hover {
+  color: #ce0832;
+  cursor: pointer;
+}
+.equipment-dashboard .container > div:last-child .the-graph {
+  height: 500px;
+  width: 100%;
+}
+.equipment-dashboard .container > div:last-child .the-graph #chart_div {
+  height: 100%;
+}
+.data-metric .row div {
+  text-align: center;
+  padding: 35px 0px;
+}
+.data-metric .row div h5 {
+  line-height: 24px;
+  text-transform: uppercase;
+}
+.data-metric .row div h1 {
+  line-height: 20px;
+  font-weight: 300;
+  color: #ce0832;
+  font-size: 36px;
+}
+.data-metric .row div:not(:last-child) {
+  border-right: 1px solid #eee;
+}
+.data-metric .row:first-child {
+  border-bottom: 1px solid #eee;
+}
+.fix-bg-parralax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (max-width: 767px) {
+  .mobile-width-100 {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=app.css.map */
